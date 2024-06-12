@@ -1,5 +1,41 @@
 .nav-underline .nav-item .nav-link {
-
     color: white;
-  
+}
+
+.one {
+    position: relative;
+    background-image: url('assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: white;
+    text-align: center;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 75%, 100% 0);
+}
+
+.one::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    clip-path: inherit;
+    z-index: 1;
+}
+
+.one > * {
+    position: relative;
+    z-index: 2;
+}
+
+.two .the-content {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.dropdown .btn {
+    border: 1px solid #dfdfdf;
 }
