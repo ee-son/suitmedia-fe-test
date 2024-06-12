@@ -1,0 +1,11 @@
+// Import functions & variables
+@import '../node_modules/bootstrap/scss/_functions.scss';
+@import '../node_modules/bootstrap/scss/_variables.scss';
+$custom-colors: (
+    "nav-white": #ffffff
+);
+
+$theme-colors: map-merge($custom-colors, $theme-colors);
+
+// Import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
